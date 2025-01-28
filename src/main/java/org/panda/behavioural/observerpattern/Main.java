@@ -20,5 +20,8 @@ public class Main {
         Observer tvObserver = new TvObserver();
         observerList.add(tvObserver);
         subject.notifyAll("20 `C");
+
+        deskTopObserver.add(subject);
+        subject.notifyAll("21 `C");
     }
 }
