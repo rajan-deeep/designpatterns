@@ -10,6 +10,7 @@ public class Main {
     }
 
     public Main(UiFactory uiFactory) {
+        //here main class doesn't know which UIfactory concreate implementation will come but code works for all
         button = uiFactory.createButton();
         scrollbar = uiFactory.createScrollbar();
     }
